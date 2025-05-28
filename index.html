@@ -24,9 +24,28 @@
         </script>
      </div>
 
+     <!-- Lesson 2-->
+        <div class="lesson">
+            <h3>Lesson 2: Show text on page</h3>
+    
+            <h2 id="heading2">text will change</h2>
+            <p id="text2">more text here</p>
+            <button onclick="lesson2()">use variables</button>
+    
+            <script>
+                function lesson2() {
+                    var messsage1 = "Hello everyone";
+                    var message2 = "I frostaan JavaScript";
+                    var message3 = "I am learning to code";
+
+                    document.getElementById("heading2").innerHTML = messsage1;
+                    document.getElementById("text2").innerHTML = message2 +" "+ message3;
+                }
+            </script>
+        </div> 
+
+        
 
 
-
-     
 </body>
 </html>
