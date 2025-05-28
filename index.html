@@ -134,12 +134,22 @@
 
         <!-- Lesson 8-->
         <div class="lesson">
-            
+            <h2>Lesson 8: Function return</h2>
+            <p><strong>Concept</strong> returning data from functions</p>
 
-            
+            <button onclick="runlesso8()">Calculate and display result</button>
+            <div class="output" id="addition8">Result will show here.</div>
+
+
             <script>
-                
-                
+                function runlesso8() {
+                    var result = addnumbers8(100, 200);
+                    document.getElementById("addition8").innerHTML = "550 + 250 = " +addnumbers8(550, 250)
+                }
+                function addnumbers8(num1, num2) {
+                    return num1 + num2;
+            
+                }
             </script>
         </div>
 
