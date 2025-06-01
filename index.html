@@ -158,9 +158,63 @@
             <h2>Lesson 9: variable scope</h2>
             <p><strong>Concept</strong> variable scope in functions</p>
 
-            
-         </div>
+        <button onclick="demonstratescope()">demonstrate variable scope</button>     
+        <div class="output" id="scopeOutput">Result will show here.</div>
 
+
+        <script>
+           var globalVariable = "I am a global variable";
+
+            function demonstratescope() {
+                var localVariable = "I am a local variable";
+                document.getElementById("scopeOutput").innerHTML =
+                 "Global:" + "globalVariable" + "<br>" + 
+                    "Local:" + "localVariable" + "<br>" +
+                    "local variable is not accessible outside this function !";
+            }
+
+        </script>
+         </div>
+         
+
+        <!-- Lesson 10-->
+        <div class="lesson">
+            <h2>Lesson 10: Form</h2>
+            <p><strong>Concept</strong> Creating a form with HTML and JavaScript</p>
+            <h1>Welcome to the Form</h1>
+            <p>Please fill out the form below:</p>
+         
+            
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="checkcreds(document.getElementById('username').value, document.getElementById('password').value)">Submit</button>
+            
+            <script>
+                   function verifyuser() {
+                    var username = document.getElementById("username").value;
+                    var password = document.getElementById("password").value;
+                   }
+
+                   function checkcreds(username, password) {
+                       var systemUsername = "Kamzer0";
+                       var systemPassword = "Kamzer012#";
+                          if (username == systemUsername && password === systemPassword) {
+                            document.getElementById("message").innerHTML = "Login successful !";
+                          }
+                            else {
+                                document.getElementById("message").innerHTML = "Login failed !";
+                            }
+                    
+                   
+
+            </script>
+            
+
+
+        
 
 
 
