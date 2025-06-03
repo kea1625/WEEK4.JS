@@ -178,40 +178,42 @@
          
 
         <!-- Lesson 10-->
-        <div class="lesson">
-            <h2>Lesson 10: Form</h2>
-            <p><strong>Concept</strong> Creating a form with HTML and JavaScript</p>
-            <h1>Welcome to the Form</h1>
-            <p>Please fill out the form below:</p>
-         
-         <form>
-            <label for="username">username:</label>
-            <input type="text" id="username55" name="username" required>
-            
-            <label for="password">Password:</label>
-            <input type="password" id="password55" name="password" required>
-   
-            <button type="button" onclick="message10">Submit</button>
+      <div class="lesson">
+        <h2>Lesson 10: Mini Project - Login Form Part 1</h2>
+        <p><strong>Concept:</strong> Getting user input from form elements</p>
+
+        <form>
+            <label for="usernameInput10">Username:</label>
+            <input type="text" id="usernameInput10"/> <br><br>
+
+            <label for="passwordInput10">Password:</label>
+            <input type="password" id="passwordInput10"/> <br><br>
+
+            <button type="button" onclick="verifyUser10()">Get Input Values</button>
         </form>
-           
-        <div class="output" id="message55"> Result will show here.</div>
-           
-            <script>
-                   function verifyuser() {
-                    var username = document.getElementById("username55").value;
-                    var password = document.getElementById("password55").value;
+
+        <div class="output" id="message10">Enter username and password, then click button</div>
+
+        <script>
+            function verifyUser10() {
+                var username = document.getElementById("usernameInput10").value;
+                var password =  document.getElementById("passwordInput10").value;
+
+                document.getElementById("message10").innerHTML = "Username entered: " + username + "<br>Password entered: " + password;
+            }
+        </script>
 
 
-                    document.getElementById("message55").innerHTML = "Username: " + username + "<br> Password: " + password;
-                }
-                    
-                   
+    </div>
 
-            </script>
-        </div>
+        <!-- Lesson 11-->
 
+        <div class="lesson">
+            <h2>Lesson 11: mini project part 2</h2>
+            <p><strong>Concept</strong> complete login </p>
+            
 
-        
+      
 
 
 
